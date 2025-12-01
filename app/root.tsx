@@ -26,16 +26,20 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  const {init} =usePuterStore();
+  const { init } = usePuterStore();
 
-  useEffect(()=>{
-    init()
-  },[init])
+  useEffect(() => {
+    init();
+  }, [init]);
 
   return (
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
+        <meta
+          name="description"
+          content="Get a free AI-powered resume builder designed to enhance your job opportunities and boost your career growth. This smart tool helps you create a professional, ATS-friendly resume while tracking your ATS score in real time. With intelligent suggestions and optimized formatting, it empowers you to improve your resume, stand out to employers, and achieve your dream job with confidence."
+        ></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
